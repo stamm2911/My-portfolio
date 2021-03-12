@@ -1,17 +1,28 @@
 *{
     /* background-color: rgb(208, 224, 235); */
+    
 }
 
 /* h1{
     background-color: salmon;
 } */
 
+:root {
+    --headerColor: green;
+    --mainColor: #1e90ff;
+}
+
+body{
+    background-color:var(--mainColor)
+}
+
 header{
     position: relative;
     display:inline-flex;
     padding: 10px;
     color: black;
-    background-color: rgb(121, 76, 226);
+    background-color:var(--headerColor)
+    ;
     width: 100%;
     height:70px;
 }
@@ -27,14 +38,22 @@ nav{
     font-size: 30px;
     width: 80%;
     /* text-align: right; */
-    background-color: steelblue;
+    /* background-color: steelblue; */
 
 }
 
 li{
     display: inline;
-    /* padding-top: 20px; */
+    text-decoration: none;
     padding: 15px;
+}
+
+footer li{
+    padding: 70px;
+}
+
+a{
+    border-bottom: 2px solid  greenyellow;
 }
 
 header div{
@@ -84,44 +103,48 @@ article h2{
 main{
     /* position: relative;
     display:inline-flex; */
-    background-color: rgb(1, 231, 116);
+    background-color: var(--mainColor);
 }
 
 section{
     padding: 5px;
     position: relative;
     display:inline-flex;
-    height: auto;
+    height:auto;
     width: 100%;
-    background-color: rgb(205, 194, 90);
+    /* background-color:var(--mainColor); */
 }
 
 h2{
-    border-right: 4px solid black;
+    padding-right: 4px;
 }
 
 section h2{
     position: relative;
     display: flex;
     justify-content:flex-end ;
-    background-color: red;
+    /* background-color: red; */
     width: 20%;
     height: 40px;
 }
 
 section p{
-    height: 30px;
-    width: 80%;
-    background-color: saddlebrown;
+    padding: 5px;
+    height: auto;
+    width: 80%;    
+    border-left: 4px solid black;
+    /* background-color:red; */
 }
 
 
 .main-imgs{
     position: relative;
     width: 80%;
-    background-color: springgreen;
+    /* background-color: springgreen; */
     height:fit-content;
     /* display: inline; */
+    border-left: 4px solid black;
+
 
 }
 
@@ -180,23 +203,34 @@ h3{
 
 
 footer{
+    padding-top: 30px;
     position: relative;
     display:inline-flex;
     height: 100px;
     width: 100%;
-    background-color: rgb(75, 72, 236);
+    background-color: var(--mainColor)
+    ;
 }
 
 footer h2{
     position: relative;
     display: flex;
     justify-content:flex-end ;
-    background-color: rgb(211, 5, 5);
+    /* background-color: rgb(211, 5, 5); */
     width: 20%;
     height: 40px;
 }
 
 ul{
     height: 30px;
-    background-color: slategray;
+    /* background-color: slategray; */
+}
+
+footer ul{
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid black;
+    /* background-color: brown; */
+    width: 80%;
+
 }
