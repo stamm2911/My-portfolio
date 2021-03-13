@@ -1,15 +1,19 @@
-*{
-    /* background-color: rgb(208, 224, 235); */
-    
-}
+
 
 /* h1{
     background-color: salmon;
 } */
 
 :root {
-    --headerColor: green;
-    --mainColor: #1e90ff;
+    --headerColor: rgb(41, 50, 78);
+    --mainColor: #e6f3ff;
+    --fontColor: rgb(42, 56, 104);
+}
+
+*{
+    /* background-color: rgb(208, 224, 235); */
+    color: var(--fontColor);
+    
 }
 
 body{
@@ -44,16 +48,25 @@ nav{
 
 li{
     display: inline;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 15px;
 }
 
 footer li{
-    padding: 70px;
+    padding: 20px;
 }
 
-a{
-    border-bottom: 2px solid  greenyellow;
+.underline{
+    color: rgb(189, 242, 255);
+    border-bottom: 4px solid  rgb(189, 242, 255);
+    text-decoration: none;
+}
+
+.underline2{
+    color: var(--fontColor);
+    border-bottom: 3px solid  var(--fontColor);
+    text-decoration: none;   
+    margin: 100px 0 0px 100px;
 }
 
 header div{
@@ -61,7 +74,7 @@ header div{
     display: flex;
     justify-content:flex-end ;
     width: 20%;
-    background-color: rgb(114, 245, 250);
+    background-color: rgb(189, 242, 255);
     /* bottom: 0; */
 }
 
@@ -73,6 +86,7 @@ h1{
     /* padding: 3px; */
     position:absolute;
     bottom: 0;
+    color: var(--headerColor);
     /* bottom: 0; */
 }
 
@@ -86,6 +100,7 @@ article {
     /* vertical-align: text-bottom; */
     /* align-items:baseline; */
     /* padding: 20px; */
+    height: 150px;
 }
 
 .img-sub{
@@ -97,7 +112,8 @@ article h2{
     position:absolute;
     bottom: 0;
     font-size: 40px;
-    background-color: rgb(255, 0, 255);
+    background-color: rgb(189, 242, 255);
+    padding: 7px;
 }
 
 main{
@@ -119,20 +135,22 @@ h2{
     padding-right: 4px;
 }
 
-section h2{
+section h2,
+footer h2{
     position: relative;
     display: flex;
     justify-content:flex-end ;
     /* background-color: red; */
     width: 20%;
     height: 40px;
+    font-size: 250%;
 }
 
 section p{
     padding: 5px;
     height: auto;
     width: 80%;    
-    border-left: 4px solid black;
+    border-left: 4px solid var(--fontColor);
     /* background-color:red; */
 }
 
@@ -143,17 +161,18 @@ section p{
     /* background-color: springgreen; */
     height:fit-content;
     /* display: inline; */
-    border-left: 4px solid black;
+    border-left: 4px solid var(--fontColor);
 
 
 }
 
 figure{
     position: relative;
-    background-color: lightcoral;
+    background-color: rgb(136, 227, 255);
     /* width: 50px;
     height: 10px; */
     /* display: inline; */
+    /* background-image: url("https://via.placeholder.com/500x500?text=Visit+Blogging.com+Now"); */
 
 }
 
@@ -163,16 +182,26 @@ figure{
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: fit-content;
-    width: fit-content;
-    border:6px solid goldenrod;
+    height: 500px;
+    width: 500px;
+    border:6px solid rgb(139, 197, 211);
+}
+
+#img1 img:hover,
+.img2-prop img:hover{
+    filter: blur(0px);
+}
+
+.filter{
+    transition: 0.5s;
+    filter:  blur(1.2px);
 }
 
 h3{
     /* ------------Posición dentro de su container, en este caso un div------------- */
     position: absolute;
     top: 30%;
-
+    z-index: 1;
     /* --------------Texto dentro de H3 -------------------*/
     display: flex;
     justify-content:center ;
@@ -185,7 +214,7 @@ h3{
     margin-bottom: 10px; */
     height: 50px;
     width: 100px;
-    background-color: goldenrod;
+    background-color: rgb(139, 197, 211);
     /* border:6px solid black; */
     /* z-index: 1; */
 }
@@ -196,7 +225,7 @@ h3{
     /* padding-left: 10px; */
     display: inline-flex;
     margin: 5px;
-    border: 6px solid goldenrod;
+    border: 6px solid rgb(139, 197, 211);
     height: 100px;
     width: 49%;
 }
@@ -219,18 +248,24 @@ footer h2{
     /* background-color: rgb(211, 5, 5); */
     width: 20%;
     height: 40px;
+    
 }
 
 ul{
-    height: 30px;
+    height: 50px;
     /* background-color: slategray; */
 }
 
 footer ul{
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 4px solid black;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-left: 4px solid var(--fontColor);
     /* background-color: brown; */
     width: 80%;
-
-}
+    
+    /* position: relative; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex
+ }
