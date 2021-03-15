@@ -128,7 +128,7 @@ section{
     display:inline-flex;
     height:auto;
     width: 100%;
-    /* background-color:var(--mainColor); */
+    /* background-color:red; */
 }
 
 h2{
@@ -162,6 +162,12 @@ section p{
     height:fit-content;
     /* display: inline; */
     border-left: 4px solid var(--fontColor);
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
 
 }
@@ -178,12 +184,11 @@ figure{
 
 #img1{
     /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
+    
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 500px;
-    width: 500px;
+    height: 900px;
+    width: 900px;
     border:6px solid rgb(139, 197, 211);
 }
 
@@ -194,7 +199,7 @@ figure{
 
 .filter{
     transition: 0.5s;
-    filter:  blur(1.2px);
+    filter:  blur(1.7px);
 }
 
 h3{
@@ -220,14 +225,17 @@ h3{
 }
 
 .img2-prop{
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding-left: 10px; */
+/*     
     display: inline-flex;
     margin: 5px;
     border: 6px solid rgb(139, 197, 211);
-    height: 100px;
-    width: 49%;
+    height: 200px;
+    width: 200px; */
+    
+    margin: 10px;
+    height: 200px;
+    width: 440px;
+    border:6px solid rgb(139, 197, 211);
 }
 
 
