@@ -1,60 +1,54 @@
-
-
-/* h1{
-    background-color: salmon;
-} */
-
 :root {
     --headerColor: rgb(41, 50, 78);
     --mainColor: #e6f3ff;
     --fontColor: rgb(42, 56, 104);
+    /* --mainColor: #1a82e4; */
 }
 
 *{
-    /* background-color: rgb(208, 224, 235); */
     color: var(--fontColor);
-    
 }
 
-body{
-    background-color:var(--mainColor)
-}
 
 header{
     position: relative;
     display:inline-flex;
+    align-content: space-between;
     padding: 10px;
     color: black;
-    background-color:var(--headerColor)
-    ;
-    width: 100%;
-    height:70px;
+    background-color:var(--headerColor);
+    width:100%;
+    height:auto;
 }
+ 
+body{
+    background-color:var(--mainColor);
+    /* display: flex;
+    flex-wrap: wrap; */
+} 
+
 
 nav{
-    /* display:inline-flex; */
-    /* padding-top: 1%; */
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content:flex-end ;
     align-items: center;
-    /* margin-bottom: 0; */
     font-size: 30px;
-    width: 80%;
-    /* text-align: right; */
-    /* background-color: steelblue; */
+    width: 100%;
+}
 
+header a{
+    margin: 10px;
 }
 
 li{
-    display: inline;
-    /* text-decoration: none; */
     padding: 15px;
 }
-
+/* 
 footer li{
     padding: 20px;
-}
+} */
 
 .underline{
     color: rgb(189, 242, 255);
@@ -66,7 +60,7 @@ footer li{
     color: var(--fontColor);
     border-bottom: 3px solid  var(--fontColor);
     text-decoration: none;   
-    margin: 100px 0 0px 100px;
+    margin: 0px 0 0px 80px;
 }
 
 header div{
@@ -75,32 +69,23 @@ header div{
     justify-content:flex-end ;
     width: 20%;
     background-color: rgb(189, 242, 255);
-    /* bottom: 0; */
+    
 }
 
-
 h1{
-    /* text-align: right;
-    padding-right: 5px; */
-    font-size: 50px;
-    /* padding: 3px; */
+    font-size: 250%;
     position:absolute;
     bottom: 0;
     color: var(--headerColor);
-    /* bottom: 0; */
 }
-
 
 article {
     position: relative;
     display: flex;
     justify-content:flex-end ;
-    height: 100px;
-    background-color: rgb(226, 108, 39);
-    /* vertical-align: text-bottom; */
-    /* align-items:baseline; */
-    /* padding: 20px; */
     height: 150px;
+    background-color: rgb(226, 108, 39);
+    width: 100%;
 }
 
 .img-sub{
@@ -111,16 +96,17 @@ article h2{
     margin: 15px;
     position:absolute;
     bottom: 0;
-    font-size: 40px;
+    font-size: 300%;
     background-color: rgb(189, 242, 255);
     padding: 7px;
 }
 
 main{
-    /* position: relative;
-    display:inline-flex; */
     background-color: var(--mainColor);
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 section{
     padding: 5px;
@@ -128,7 +114,6 @@ section{
     display:inline-flex;
     height:auto;
     width: 100%;
-    /* background-color:red; */
 }
 
 h2{
@@ -139,11 +124,13 @@ section h2,
 footer h2{
     position: relative;
     display: flex;
-    justify-content:flex-end ;
-    /* background-color: red; */
+    justify-content:flex-end;
+    flex-wrap: wrap;
     width: 20%;
     height: 40px;
-    font-size: 250%;
+    font-size: 300%;
+    margin-bottom: 50px;
+    
 }
 
 section p{
@@ -151,43 +138,29 @@ section p{
     height: auto;
     width: 80%;    
     border-left: 4px solid var(--fontColor);
-    /* background-color:red; */
 }
 
 
 .main-imgs{
     position: relative;
     width: 80%;
-    /* background-color: springgreen; */
     height:fit-content;
-    /* display: inline; */
     border-left: 4px solid var(--fontColor);
-    /* background-color: red; */
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
 
 figure{
     position: relative;
     background-color: rgb(136, 227, 255);
-    /* width: 50px;
-    height: 10px; */
-    /* display: inline; */
-    /* background-image: url("https://via.placeholder.com/500x500?text=Visit+Blogging.com+Now"); */
-
 }
 
-#img1{
-    /* display: block; */
-    
+#img1{    
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 900px;
+    height: auto;
     width: 900px;
     border:6px solid rgb(139, 197, 211);
 }
@@ -196,84 +169,124 @@ figure{
 .img2-prop img:hover{
     filter: blur(0px);
 }
-
 .filter{
     transition: 0.5s;
     filter:  blur(1.7px);
+    width:100%;
+    height: auto;
 }
 
 h3{
-    /* ------------Posición dentro de su container, en este caso un div------------- */
     position: absolute;
     top: 30%;
     z-index: 1;
-    /* --------------Texto dentro de H3 -------------------*/
+    
     display: flex;
     justify-content:center ;
     align-items: center;
-/* 
-    margin-left: 200px;
-    margin-right: auto; */
-/* 
-    margin-top: 10px;
-    margin-bottom: 10px; */
     height: 50px;
     width: 100px;
     background-color: rgb(139, 197, 211);
-    /* border:6px solid black; */
-    /* z-index: 1; */
+    
 }
 
 .img2-prop{
-/*     
-    display: inline-flex;
-    margin: 5px;
-    border: 6px solid rgb(139, 197, 211);
-    height: 200px;
-    width: 200px; */
-    
     margin: 10px;
-    height: 200px;
+    height: auto;
     width: 440px;
     border:6px solid rgb(139, 197, 211);
 }
 
 
 footer{
-    padding-top: 30px;
+    /* padding-top: 30px; */
     position: relative;
-    display:inline-flex;
-    height: 100px;
+    display:flex;
+    flex-direction: row;
+    height: auto;
     width: 100%;
-    background-color: var(--mainColor)
-    ;
+    /* background-color: red; */
+    margin: 3px;
+    
 }
 
 footer h2{
     position: relative;
     display: flex;
     justify-content:flex-end ;
-    /* background-color: rgb(211, 5, 5); */
-    width: 20%;
-    height: 40px;
+    height: auto;
     
 }
 
-ul{
-    height: 50px;
-    /* background-color: slategray; */
-}
-
-footer ul{
-    /* margin-left: auto;
-    margin-right: auto; */
+footer div{
     border-left: 4px solid var(--fontColor);
-    /* background-color: brown; */
     width: 80%;
-    
-    /* position: relative; */
     display: flex;
     justify-content:center;
-    align-items: center;
-    flex
+    align-items: center;  
+    /* margin-right: 50px; */
+} 
+
+
+  @media screen and (max-width: 1164px) {
+    figure, img{
+        min-width: 50%;
+    }
+  }
+  
+ @media screen and (max-width: 1250px) {
+    *{
+      font-size: 95%;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    *{
+      font-size: 93%;
+    }
+  }
+
+  
+  @media screen and (max-width: 849px) {
+    *{
+      font-size: 90%;
+    }
+    h1{
+        font-size: 220%;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    *{
+      font-size: 84%;
+    }
+    footer h2{
+        font-size: 190%;
+    }
  }
+
+ @media screen and (max-width: 320px) {
+    *{
+      font-size: 81%;
+    }
+ }
+
+  @media screen and (max-width: 690px) {
+    nav{
+        flex-direction: column;
+        
+    }
+    footer div{
+        flex-direction: column;
+        
+    }
+    header div{
+        height: 50px;
+    }
+    h1{
+        font-size: 190%;
+    }
+    /* footer h2{
+        font-size: 250%;
+    } */
+  }
