@@ -7,11 +7,17 @@
 
 *{
     color: var(--fontColor);
+    transition: all 0.5s ease-in-out;
+    scroll-behavior: smooth;
+
 }
 
 
 header{
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
     display:inline-flex;
     align-content: space-between;
     padding: 10px;
@@ -36,10 +42,12 @@ nav{
     align-items: center;
     font-size: 30px;
     width: 100%;
+
 }
 
 header a{
     margin: 10px;
+    
 }
 
 li{
@@ -60,7 +68,7 @@ footer li{
     color: var(--fontColor);
     border-bottom: 3px solid  var(--fontColor);
     text-decoration: none;   
-    margin: 0px 0 0px 80px;
+    margin: 0px 0 15px 80px;
 }
 
 header div{
@@ -68,12 +76,11 @@ header div{
     display: flex;
     justify-content:flex-end ;
     width: 20%;
-    background-color: rgb(189, 242, 255);
-    
+    background-color: rgb(189, 242, 255);  
 }
 
 h1{
-    font-size: 250%;
+    font-size: 200%;
     position:absolute;
     bottom: 0;
     color: var(--headerColor);
@@ -86,6 +93,7 @@ article {
     height: 150px;
     background-color: rgb(226, 108, 39);
     width: 100%;
+    margin-top: 74px;
 }
 
 .img-sub{
@@ -114,6 +122,8 @@ section{
     display:inline-flex;
     height:auto;
     width: 100%;
+    scroll-behavior: smooth; 
+    /* overflow-y: scroll; */
 }
 
 h2{
@@ -134,10 +144,12 @@ footer h2{
 }
 
 section p{
+    font-size: 150%;
     padding: 5px;
     height: auto;
     width: 80%;    
     border-left: 4px solid var(--fontColor);
+    overflow-wrap:break-word;
 }
 
 
@@ -170,8 +182,8 @@ figure{
     filter: blur(0px);
 }
 .filter{
-    transition: 0.5s;
-    filter:  blur(1.7px);
+    transition: 0.6s;
+    filter:  blur(1.9px);
     width:100%;
     height: auto;
 }
@@ -181,11 +193,12 @@ h3{
     top: 30%;
     z-index: 1;
     
+    font-size: 150%;
     display: flex;
     justify-content:center ;
     align-items: center;
-    height: 50px;
-    width: 100px;
+    height: fit-content;
+    width: 150px;
     background-color: rgb(139, 197, 211);
     
 }
@@ -227,6 +240,12 @@ footer div{
     /* margin-right: 50px; */
 } 
 
+footer a{
+    margin: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid var(--fontColor);
+}
+
 
   @media screen and (max-width: 1164px) {
     figure, img{
@@ -257,18 +276,24 @@ footer div{
   }
 
   @media screen and (max-width: 460px) {
-    *{
-      font-size: 84%;
+    nav a{
+        font-size: 14px;
     }
-    footer h2{
-        font-size: 190%;
+    main{
+      font-size: 70%;
     }
  }
 
  @media screen and (max-width: 320px) {
-    *{
-      font-size: 81%;
+    header a{
+        font-size: 20px;
     }
+    main{
+      font-size: 63%;
+    }
+    /* footer h2{
+        font-size: 70%;
+    } */
  }
 
   @media screen and (max-width: 690px) {
@@ -284,9 +309,31 @@ footer div{
         height: 50px;
     }
     h1{
-        font-size: 190%;
+        font-size: 100%;
     }
-    /* footer h2{
-        font-size: 250%;
+    article{
+        margin-top: 165px;
+    }
+    article h2{
+        font-size: 170%;
+    }
+    footer a{
+        font-size: 140%;
+    }
+    /* nav a{
+        font-size: 28px;
     } */
+    footer h2{
+        font-size: 165%;
+    }
+  }
+
+  @media screen and (max-width: 1025px){
+    .font-sizing{
+        font-size: 3vw;
+    }
+    footer div{
+        flex-direction: column;
+        
+    }
   }
