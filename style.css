@@ -1,6 +1,6 @@
 :root {
     --headerColor: rgb(41, 50, 78);
-    --mainColor: #e6f3ff;
+    --mainColor: #c5e3ff;
     --fontColor: rgb(42, 56, 104);
     /* --mainColor: #1a82e4; */
 }
@@ -100,6 +100,11 @@ article {
     width: 100%;
 }
 
+main img{
+    /* border:10px ridge rgb(139, 197, 211); */
+    border-radius: 10px;
+}
+
 article h2{
     margin: 15px;
     position:absolute;
@@ -174,7 +179,8 @@ figure{
     margin-bottom: 10px;
     height: auto;
     width: 900px;
-    border:6px solid rgb(139, 197, 211);
+    border:10px ridge rgb(139, 197, 211);
+    border-radius: 20px;
 }
 
 #img1 img:hover,
@@ -192,14 +198,16 @@ h3{
     position: absolute;
     top: 30%;
     z-index: 1;
-    
+    border-top:2px solid rgb(42, 56, 104);
+    border-bottom:2px solid rgb(42, 56, 104);
+    border-right:2px solid rgb(42, 56, 104);
     font-size: 150%;
     display: flex;
     justify-content:center ;
     align-items: center;
     height: fit-content;
     width: 150px;
-    background-color: rgb(139, 197, 211);
+    background-color: rgb(116, 186, 204);
     
 }
 
@@ -207,7 +215,8 @@ h3{
     margin: 10px;
     height: auto;
     width: 440px;
-    border:6px solid rgb(139, 197, 211);
+    border:10px ridge rgb(139, 197, 211);
+    border-radius: 20px;
 }
 
 
