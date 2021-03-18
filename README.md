@@ -35,5 +35,5 @@ This project was posbile with the knowledge acquired in Tecnologico de Monterrey
 ## Deployed application
 https://stamm2911.github.io/My-portfolio-index/
 
-![Deployed application](img\deployed-app.PNG)
+![Deployed application](img/deployed-app.PNG)
 ![alt text](.\img\prework.PNG)
