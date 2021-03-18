@@ -1,4 +1,4 @@
-# <Code-refactor>
+# <Portfolio page>
 ## Description
 This repo contains my Portfolio main page. The porpuse of this project is to showcase my skills and talents to employers looking to fill a full-time position.
 
