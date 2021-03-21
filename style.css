@@ -179,7 +179,7 @@ figure {
   transition: 0.6s;
   filter: blur(1.9px);
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* The HTML <h3> tags will have this properties */
