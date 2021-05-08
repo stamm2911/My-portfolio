@@ -28,7 +28,13 @@ header {
 
 /* All HTML <body> tags will have this properties */
 body {
-  background-color: var(--mainColor);
+  /* background-color: var(--mainColor); */
+  background-attachment: fixed;
+  background-image: linear-gradient(white, #9acdfd);
+}
+
+main img {
+  opacity: 0.5;
 }
 
 /* The HTML <nav> tag will have this properties */
@@ -172,6 +178,7 @@ figure {
 #img1 img:hover,
 .img2-prop img:hover {
   filter: blur(0px);
+  opacity: 1;
 }
 
 /*Creates a class named "filter", its properties will apply to all the HTML elements calling this class*/
@@ -244,33 +251,33 @@ footer a {
 
 /* It reajust the HTML elements to have a Responsive layout */
 @media screen and (max-width: 1025px) {
-    * {
-      font-size: 93%;
-    }
-    .font-sizing {
-      font-size: 3vw;
-    }
-    footer div {
-      flex-direction: column;
-    }
+  * {
+    font-size: 93%;
   }
-  
-  /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 1164px) {
-    figure,
-    img {
-      min-width: 50%;
-    }
+  .font-sizing {
+    font-size: 3vw;
   }
-  
-  /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 1250px) {
-    * {
-      font-size: 95%;
-    }
+  footer div {
+    flex-direction: column;
   }
+}
 
-  /* It reajust the HTML elements to have a Responsive layout */
+/* It reajust the HTML elements to have a Responsive layout */
+@media screen and (max-width: 1164px) {
+  figure,
+  img {
+    min-width: 50%;
+  }
+}
+
+/* It reajust the HTML elements to have a Responsive layout */
+@media screen and (max-width: 1250px) {
+  * {
+    font-size: 95%;
+  }
+}
+
+/* It reajust the HTML elements to have a Responsive layout */
 @media screen and (max-width: 320px) {
   header a {
     font-size: 20px;
@@ -327,4 +334,3 @@ footer a {
     font-size: 120%;
   }
 }
-
