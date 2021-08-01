@@ -8,7 +8,7 @@
 /* This is a universal selector, it will apply this properties to the whole webpage */
 * {
   color: var(--fontColor);
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   scroll-behavior: smooth;
 }
 
@@ -21,7 +21,8 @@ header {
   display: inline-flex;
   align-content: space-between;
   padding: 10px;
-  background-color: var(--headerColor);
+  /* background-color: var(--headerColor); */
+  background-image: linear-gradient(to bottom right, rgb(70, 85, 129), var(--headerColor));
   width: 100%;
   height: auto;
 }
@@ -89,8 +90,8 @@ article {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  height: 150px;
-  background-color: rgb(226, 108, 39);
+  height: 100px;
+  background-image: linear-gradient(to bottom right, gray, rgb(165, 165, 165));
   width: 100%;
   margin-top: 73px;
 }
