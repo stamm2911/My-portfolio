@@ -1,5 +1,6 @@
 import NavTitle from "./NavTitle";
 import NavButton from "./NavButton";
+import CV from '../assets/CV_JEduardoMorenoStamm_S.pdf'
 
 const styles = {
   bg: {
@@ -18,6 +19,7 @@ function Nav({handlePageChange}) {
           <a className="own-reflection glowing-button" href="#">
             Eduardo Stamm
           </a>
+          {/* <NavTitle/> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -38,10 +40,11 @@ function Nav({handlePageChange}) {
                 <NavButton section={"Work"} handlePageChange={handlePageChange}/>
               </li>
               <li>
-                <NavButton section={"Contact Me"} />
+                <NavButton section={"ContactMe"} handlePageChange={handlePageChange}/>
               </li>
               <li>
-                <NavButton section={"Resume"} />
+                {/* <NavButton section={"Resume"} /> */}
+                <a className="underline" href={CV} download><NavButton section={"Resume"} handlePageChange={handlePageChange}/></a>
               </li>
             </ul>
           </div>

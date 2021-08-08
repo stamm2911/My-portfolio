@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
-import image from "../img/rottweiler.jpg";
+import techBlog from "../img/tech-blog.PNG";
+import covidTracker from "../img/covid-tracker.PNG";
+import pawbook from "../img/pawbook.JPG";
+import weatherDashboard from "../img/weather-dashboard.PNG";
+import workoutTracker from "../img/workout-tracker.PNG";
+
 // import image from "../img/golden.jpg";
 const shortid = require("shortid");
 
 const styles = {
   slide: {
-    height: "300px",
+    height: "400px",
     width: "20px",
     objectFit: "cover",
   },
@@ -48,38 +53,59 @@ function WorkCarousel() {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
-        <div className="carousel-inner ">
-          <div className="carousel-item active" data-bs-interval="10000">
-            <a href="#">
+        <figure className="carousel-inner">
+          <div className="carousel-item active filter" data-bs-interval="2000">
+            <a href="https://mighty-castle-38499.herokuapp.com/">
               <img
-                src={image}
+                src={techBlog}
                 className="d-block w-100"
                 style={styles.slide}
-                alt={image}
+                alt="techblog"
               />
             </a>
             <div className="carousel-caption d-none d-md-block"></div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img
-              src={image}
-              className="d-block w-100"
-              style={styles.slide}
-              alt={image}
-            />
+          <div className="carousel-item filter" data-bs-interval="2000">
+            <a href="https://gutihi85.github.io/covid_tracker/">
+              <img
+                src={covidTracker}
+                className="d-block w-100"
+                style={styles.slide}
+                alt="covid-tracker"
+              />
+            </a>
             <div className="carousel-caption d-none d-md-block"></div>
           </div>
-          <div className="carousel-item">
-            <img
-              src={image}
-              className="d-block w-100"
-              style={styles.slide}
-              alt={image}
-            />
+          <div className="carousel-item filter">
+            <a href="https://stormy-savannah-69028.herokuapp.com/login">
+              <img
+                src={pawbook}
+                className="d-block w-100"
+                style={styles.slide}
+                alt="pawbook"
+              />
+            </a>
             <div className="carousel-caption d-none d-md-block"></div>
           </div>
-        </div>
+          <div className="carousel-item filter" data-bs-interval="2000">
+            <a href="https://desolate-wildwood-80171.herokuapp.com">
+              <img
+                src={workoutTracker}
+                className="d-block w-100"
+                style={styles.slide}
+                alt="workout-tracker"
+              />
+            </a>
+            <div className="carousel-caption d-none d-md-block"></div>
+          </div>
+        </figure>
         <button
           className="carousel-control-prev"
           type="button"
