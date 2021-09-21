@@ -17,7 +17,8 @@ function AboutMe() {
     <>
       <div className="container-test" style={{ ...styles, opacity: opacity }}>
         <p>
-          Creative, self-taught, problem solver, quick thinker and more.
+          Creative, problem solver, quick thinker and more.
+          <br/>
           Combining art and logic, analysis and imagination have made me choose
           to become a front-end developer who loves learning new perspectives,
           new technologies, and breaking paradigms.

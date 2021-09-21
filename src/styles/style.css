@@ -1,6 +1,6 @@
 body {
   font-family: "Staatliches", cursive;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(0, 0, 0);
   /* margin: 0;
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@ a:hover {
 }
 
 #icon-reflection {
-  -webkit-box-reflect: below 80px linear-gradient(transparent, #0005);
+  -webkit-box-reflect: below 80px linear-gradient(transparent, rgba(0, 0, 0, 0.333));
 }
 
 @media screen and (max-width: 520px) {
@@ -103,7 +103,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: fit-content;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 200%;
 }
 
@@ -137,6 +137,7 @@ figure {
     font-size: 170%;
     width: 230px;
     line-height: normal;
+    -webkit-box-reflect: below 50px linear-gradient(transparent, #0005);
   }
 }
 /* Close About me----------------------------------------------------------- */
@@ -147,9 +148,9 @@ figure {
   width: 100%;
   background: radial-gradient(
     circle,
-    rgb(48, 48, 48) 8%,
-    rgb(32, 32, 32) 30%,
-    rgb(0, 0, 0) 70%
+    rgb(54, 54, 54) 8%,
+    rgb(49, 49, 49) 30%,
+    rgb(3, 3, 3) 90%
   );
   margin: 0;
   display: flex;
