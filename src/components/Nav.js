@@ -1,6 +1,6 @@
 import NavTitle from "./NavTitle";
 import NavButton from "./NavButton";
-import CV from '../assets/CV_JEduardoMorenoStamm_S.pdf'
+import CV from '../assets/EDUARDO_STAMM_CV.pdf'
 
 const styles = {
   bg: {

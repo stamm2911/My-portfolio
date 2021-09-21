@@ -61,27 +61,61 @@ function WorkCarousel() {
           ></button>
         </div>
         <figure className="carousel-inner">
-          <div className="carousel-item active filter" data-bs-interval="2000">
-            <a href="https://mighty-castle-38499.herokuapp.com/">
-              <img
-                src={techBlog}
-                className="d-block w-100"
-                style={styles.slide}
-                alt="techblog"
-              />
-            </a>
-            <div className="carousel-caption d-none d-md-block"></div>
+          <div className="carousel-item active" data-bs-interval="2000">
+            <div className="zindex">
+              <ul>
+                <li>
+                  ● Summary: CMS-style blog site to publish articles, blog
+                  posts, thoughts and opinions.{" "}
+                </li>
+                <br />
+                <li>● Role: Sole Full Stack author</li>
+                <br />
+                <li>
+                  ● Tools: HTML, CSS, JavaScript, Handlebars, Bootstrap,
+                  GoogleFonts, Express, MySQL
+                </li>
+              </ul>
+            </div>
+            <div className="filter">
+              <a href="https://mighty-castle-38499.herokuapp.com/">
+                <img
+                  src={techBlog}
+                  className="d-block w-100"
+                  style={styles.slide}
+                  alt="techblog"
+                />
+                <div className="carousel-caption d-none d-md-block"></div>
+              </a>
+            </div>
           </div>
-          <div className="carousel-item filter" data-bs-interval="2000">
-            <a href="https://gutihi85.github.io/covid_tracker/">
-              <img
-                src={covidTracker}
-                className="d-block w-100"
-                style={styles.slide}
-                alt="covid-tracker"
-              />
-            </a>
-            <div className="carousel-caption d-none d-md-block"></div>
+          <div className="carousel-item " data-bs-interval="2000">
+            <div className="zindex">
+              <ul>
+                <li>
+                  ● Summary: App to keep users informed about Covid-19
+                  statistics and relevant news, per country and globally.
+                </li>
+                <br />
+                <li>● Role: Front End Developer</li>
+                <br />
+                <li>
+                  ● Tools: HTML, CSS, JavaScript, jQuery, API, Bootstrap, Font
+                  Awesome
+                </li>
+              </ul>
+            </div>
+            <div className="filter">
+              <a href="https://gutihi85.github.io/covid_tracker/">
+                <img
+                  src={covidTracker}
+                  className="d-block w-100"
+                  style={styles.slide}
+                  alt="covid-tracker"
+                />
+              </a>
+              <div className="carousel-caption d-none d-md-block"></div>
+            </div>
           </div>
           <div className="carousel-item filter">
             <a href="https://stormy-savannah-69028.herokuapp.com/login">

@@ -70,16 +70,41 @@ a:hover {
   color: red;
 }
 .filter {
+  /* border-radius: 25px; */
   transition: 0.6s;
   filter: blur(0.9px);
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
+  /* z-index: 3; */
+  color: #039cf4;
+  background-color: hotpink;
 }
 
-.filter:hover {
+.filter:hover{
   filter: blur(0px);
   opacity: 1;
+}
+
+.zindex{
+  opacity: 1;
+  /* z-index: 1; */
+  /* margin: 0; */
+  position: absolute;
+  display: flex;
+  text-align: center;
+  /* left: 0; 
+  right: 0;  */
+  /* margin-left: auto; 
+  margin-right: auto;  */
+  padding: 0 100px 0 100px;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  font-size: 200%;
 }
 
 figure {
@@ -93,17 +118,18 @@ figure {
 
 /* About me----------------------------------------------------------------- */
 .container-test {
-  font-size: 250%;
+  font-size: 200%;
   color: #03e9f4;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  top: 6%;
-  width: 500px;
+  top: 8%;
+  width: 600px;
   height: fit-content;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, #0005);
-  line-height: 1.3;
+  -webkit-box-reflect: below 100px linear-gradient(transparent, #0005);
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 520px) {

@@ -17,12 +17,11 @@ function AboutMe() {
     <>
       <div className="container-test" style={{ ...styles, opacity: opacity }}>
         <p>
-          I'm a front-end developer looking for new and challenging professional
-          experiences. My goal is to improve my programming skills, while
-          contributing in my work area. I aim to learn and grow in all aspects
-          of life, both personally and professionally.
+          Creative, self-taught, problem solver, quick thinker and more.
+          Combining art and logic, analysis and imagination have made me choose
+          to become a front-end developer who loves learning new perspectives,
+          new technologies, and breaking paradigms.
         </p>
-        {/* {reRender} */}
       </div>
     </>
   );
