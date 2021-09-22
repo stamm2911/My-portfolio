@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import techBlog from "../img/tech-blog.PNG";
 import covidTracker from "../img/covid-tracker.PNG";
+import inspire from "../img/inspire.JPG";
 import pawbook from "../img/pawbook.JPG";
 import weatherDashboard from "../img/weather-dashboard.PNG";
 import workoutTracker from "../img/workout-tracker.PNG";
@@ -64,6 +65,8 @@ function WorkCarousel() {
           <div className="carousel-item active" data-bs-interval="2000">
             <div className="zindex">
               <ul>
+                <li>Tech Blog</li>
+                <br />
                 <li>
                   ● Summary: CMS-style blog site to publish articles, blog
                   posts, thoughts and opinions.{" "}
@@ -89,9 +92,43 @@ function WorkCarousel() {
               </a>
             </div>
           </div>
+
           <div className="carousel-item " data-bs-interval="2000">
             <div className="zindex">
               <ul>
+                <li>INSPIRE</li>
+                <br />
+                <li>
+                  ● Summary: Social network not only to post what's on your
+                  mind, but to enter a marketplace, browse available items and
+                  purchase them
+                </li>
+                <br />
+                <li>● Role: Market Place Full Stack developer</li>
+                <br />
+                <li>
+                  ● Tools: HTML, CSS, JavaScript, Materialize, Mongoose,
+                  Express, REACT, Node, GraphQL and Stripe payment
+                </li>
+              </ul>
+            </div>
+            <div className="filter">
+              <a href="https://salty-reaches-45303.herokuapp.com/marketplace">
+                <img
+                  src={inspire}
+                  className="d-block w-100"
+                  style={styles.slide}
+                  alt="covid-tracker"
+                />
+              </a>
+              <div className="carousel-caption d-none d-md-block"></div>
+            </div>
+          </div>
+          <div className="carousel-item " data-bs-interval="2000">
+            <div className="zindex">
+              <ul>
+                <li>COVID-19 TRACKER</li>
+                <br />
                 <li>
                   ● Summary: App to keep users informed about Covid-19
                   statistics and relevant news, per country and globally.
@@ -117,27 +154,36 @@ function WorkCarousel() {
               <div className="carousel-caption d-none d-md-block"></div>
             </div>
           </div>
-          <div className="carousel-item filter">
-            <a href="https://stormy-savannah-69028.herokuapp.com/login">
-              <img
-                src={pawbook}
-                className="d-block w-100"
-                style={styles.slide}
-                alt="pawbook"
-              />
-            </a>
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item filter" data-bs-interval="2000">
-            <a href="https://desolate-wildwood-80171.herokuapp.com">
-              <img
-                src={workoutTracker}
-                className="d-block w-100"
-                style={styles.slide}
-                alt="workout-tracker"
-              />
-            </a>
-            <div className="carousel-caption d-none d-md-block"></div>
+
+          <div className="carousel-item " data-bs-interval="2000">
+            <div className="zindex">
+              <ul>
+                <li>PAWBOOK</li>
+                <br />
+                <li>
+                  ● Summary: Social network to not only post, find and/or adopt
+                  lost pets, but also to donate food for stray animals
+                </li>
+                <br />
+                <li>● Role: Full Stack Developer</li>
+                <br />
+                <li>
+                  ● Tools: HTML, CSS, JavaScript, Handlebars, Bootstrap,
+                  GoogleFonts, Express, MySQL
+                </li>
+              </ul>
+            </div>
+            <div className="filter">
+              <a href="https://stormy-savannah-69028.herokuapp.com/login">
+                <img
+                  src={pawbook}
+                  className="d-block w-100"
+                  style={styles.slide}
+                  alt="covid-tracker"
+                />
+              </a>
+              <div className="carousel-caption d-none d-md-block"></div>
+            </div>
           </div>
         </figure>
         <button

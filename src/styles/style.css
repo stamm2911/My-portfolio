@@ -9,6 +9,10 @@ body {
   /* transition: all 1s ease-in-out, */
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -32,7 +36,8 @@ a:hover {
 }
 
 #icon-reflection {
-  -webkit-box-reflect: below 80px linear-gradient(transparent, rgba(0, 0, 0, 0.333));
+  -webkit-box-reflect: below 90px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.333));
 }
 
 @media screen and (max-width: 520px) {
@@ -81,12 +86,12 @@ a:hover {
   background-color: hotpink;
 }
 
-.filter:hover{
+.filter:hover {
   filter: blur(0px);
   opacity: 1;
 }
 
-.zindex{
+.zindex {
   opacity: 1;
   /* z-index: 1; */
   /* margin: 0; */
@@ -104,7 +109,16 @@ a:hover {
   flex-direction: column;
   width: fit-content;
   color: #ffffff;
-  font-size: 200%;
+  font-size: 180%;
+}
+
+@media screen and (max-width: 520px) {
+  .zindex {
+    font-size: 100%;
+  }
+  /* .container-test {
+    font-size: 10%;
+  } */
 }
 
 figure {
@@ -118,23 +132,23 @@ figure {
 
 /* About me----------------------------------------------------------------- */
 .container-test {
-  font-size: 200%;
+  font-size: 170%;
   color: #03e9f4;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  top: 8%;
+  top: 7%;
   width: 600px;
   height: fit-content;
-  -webkit-box-reflect: below 100px linear-gradient(transparent, #0005);
+  -webkit-box-reflect: below 60px linear-gradient(transparent, #0005);
   line-height: 1.5;
 }
 
 @media screen and (max-width: 520px) {
   .container-test {
-    font-size: 170%;
+    font-size: 115%;
     width: 230px;
     line-height: normal;
     -webkit-box-reflect: below 50px linear-gradient(transparent, #0005);
@@ -180,7 +194,7 @@ figure {
 }
 
 .container-wrapper #carouselExampleDark {
-  -webkit-box-reflect: below 50px linear-gradient(transparent, #0005);
+  -webkit-box-reflect: below 65px linear-gradient(transparent, #0005);
 }
 
 @media screen and (max-width: 520px) {
