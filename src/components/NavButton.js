@@ -5,7 +5,7 @@ function NavButton({section, handlePageChange}) {
       <span></span>
       <span></span>
       <span></span>
-      {section}
+      {section === 'ContactMe'? 'Contact Me' : section}
     </button>
   );
 }

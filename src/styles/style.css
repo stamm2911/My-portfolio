@@ -31,7 +31,7 @@ a:hover {
 
 .icons {
   margin: 20px 20px 20px 0;
-  color: #03e9f4;
+  color: #000000;
   font-size: 150%;
 }
 
@@ -57,6 +57,7 @@ a:hover {
   height: 100px;
   width: 100px;
   outline: black;
+  
   background-size: 100%, 100%;
   /* border-radius: 50%; */
   /* border: 1px solid black; */
@@ -83,7 +84,11 @@ a:hover {
   opacity: 0.2;
   /* z-index: 3; */
   color: #039cf4;
-  background-color: hotpink;
+  /* background-color: hotpink; */
+}
+
+.rounded {
+background-color: transparent;
 }
 
 .filter:hover {
@@ -96,6 +101,7 @@ a:hover {
   /* z-index: 1; */
   /* margin: 0; */
   position: absolute;
+  
   display: flex;
   text-align: center;
   /* left: 0; 
@@ -123,6 +129,7 @@ a:hover {
 
 figure {
   background-color: black;
+  border-radius: 25px;
 }
 .transitions {
   transition: all 5s ease-in-out;
@@ -132,26 +139,27 @@ figure {
 
 /* About me----------------------------------------------------------------- */
 .container-test {
-  font-size: 170%;
-  color: #03e9f4;
+  font-size: 160%;
+  /* color: #03e9f4; */
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  top: 7%;
+  top: 4%;
   width: 600px;
   height: fit-content;
-  -webkit-box-reflect: below 60px linear-gradient(transparent, #0005);
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
   line-height: 1.5;
 }
 
 @media screen and (max-width: 520px) {
   .container-test {
-    font-size: 115%;
+    top: 8%;
+    font-size: 105%;
     width: 230px;
     line-height: normal;
-    -webkit-box-reflect: below 50px linear-gradient(transparent, #0005);
+    -webkit-box-reflect: below 25px linear-gradient(transparent, #0005);
   }
 }
 /* Close About me----------------------------------------------------------- */
@@ -160,11 +168,16 @@ figure {
 .top {
   height: 70vh;
   width: 100%;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgb(54, 54, 54) 8%,
     rgb(49, 49, 49) 30%,
     rgb(3, 3, 3) 90%
+  ); */
+  background: radial-gradient(
+    circle,
+    rgb(255, 214, 10),
+    rgb(15, 15, 15) 
   );
   margin: 0;
   display: flex;
@@ -174,14 +187,19 @@ figure {
 }
 
 .bottom {
-  border-top: solid 1px rgb(31, 31, 31);
+  /* border-top: solid 1px rgb(156, 156, 156); */
   height: 30vh;
   width: 100%;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgb(49, 49, 49) 8%,
     rgb(32, 32, 32) 30%,
     rgb(0, 0, 0) 70%
+  ); */
+  background: radial-gradient(
+    circle,
+    rgb(255, 214, 10),
+    rgb(15, 15, 15) 
   );
 }
 
@@ -224,6 +242,7 @@ figure {
   text-align: center;
   line-height: 50px;
   margin: 0 -0.5px;
+  
 }
 
 .glowing {

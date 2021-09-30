@@ -16,9 +16,9 @@ function Nav({handlePageChange}) {
         style={styles.bg}
       >
         <div className="container-fluid">
-          <a className="own-reflection glowing-button" href="#">
+          <button className="own-reflection glowing-button" onClick={() => handlePageChange('About Me')} href={'About Me'}>
             Eduardo Stamm
-          </a>
+          </button>
           {/* <NavTitle/> */}
           <button
             className="navbar-toggler"
@@ -34,7 +34,7 @@ function Nav({handlePageChange}) {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul className="navbar-nav ms-auto">
               <li>
-                <NavButton section={"AboutMe"} handlePageChange={handlePageChange}/>
+                <NavButton section={"About Me"} handlePageChange={handlePageChange}/>
               </li>
               <li>
                 <NavButton section={"Work"} handlePageChange={handlePageChange}/>

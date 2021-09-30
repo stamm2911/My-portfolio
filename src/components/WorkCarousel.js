@@ -30,7 +30,7 @@ function WorkCarousel() {
       {/* <img src={image} alt="dog" /> */}
       <div
         id="carouselExampleDark"
-        className="carousel carousel-dark slide shadow bg-body rounded"
+        className="carousel carousel-dark slide shadow rounded"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -62,7 +62,7 @@ function WorkCarousel() {
           ></button>
         </div>
         <figure className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="2000">
+          <div className="carousel-item active" data-bs-interval="3500">
             <div className="zindex">
               <ul>
                 <li>Tech Blog</li>
@@ -93,7 +93,7 @@ function WorkCarousel() {
             </div>
           </div>
 
-          <div className="carousel-item " data-bs-interval="2000">
+          <div className="carousel-item " data-bs-interval="3500">
             <div className="zindex">
               <ul>
                 <li>INSPIRE</li>
@@ -124,7 +124,7 @@ function WorkCarousel() {
               <div className="carousel-caption d-none d-md-block"></div>
             </div>
           </div>
-          <div className="carousel-item " data-bs-interval="2000">
+          <div className="carousel-item " data-bs-interval="3500">
             <div className="zindex">
               <ul>
                 <li>COVID-19 TRACKER</li>
@@ -155,7 +155,7 @@ function WorkCarousel() {
             </div>
           </div>
 
-          <div className="carousel-item " data-bs-interval="2000">
+          <div className="carousel-item " data-bs-interval="3500">
             <div className="zindex">
               <ul>
                 <li>PAWBOOK</li>
