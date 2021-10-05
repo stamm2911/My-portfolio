@@ -147,19 +147,34 @@ figure {
   align-items: center;
   text-align: center;
   top: 4%;
-  width: 600px;
+  width: 750px;
   height: fit-content;
   -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
   line-height: 1.5;
+}
+
+p:nth-child(1){
+  font-size: 40px;
+}
+
+p:nth-child(2){
+  font-size: 22px;
 }
 
 @media screen and (max-width: 520px) {
   .container-test {
     top: 8%;
     font-size: 105%;
-    width: 230px;
+    width: 270px;
     line-height: normal;
     -webkit-box-reflect: below 25px linear-gradient(transparent, #0005);
+  }
+  p:nth-child(1){
+    font-size: 105%;
+  }
+  
+  p:nth-child(2){
+    font-size: 105%;
   }
 }
 /* Close About me----------------------------------------------------------- */

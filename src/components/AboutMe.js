@@ -18,12 +18,13 @@ function AboutMe() {
       <div className="container-test" style={{ ...styles, opacity: opacity }}>
         <p>
         Front-end developer, creative, problem solver, quick thinker and more...
-          <br />
-          I like to apply and integrate well known technologies like REACT and JavaScript, or any other new one that I discover, to create original work, or to solve any challenge more efficiently. I´m a +2 years experience developer who loves learning new technologies, new perspectives, and breaking paradigms.
+        </p>
+        <p>
+          I like to apply and integrate well known technologies like REACT and JavaScript, or any other new one that I discover, to develop original projects, or to solve any challenge more efficiently. I´m a +2 years experience developer who loves learning new technologies, new perspectives, and breaking paradigms.
         </p>
         <ul>
           <h2>TECHNICAL SKILLS</h2>
-          <li>● Languages: JavaScript ES6+, CSS3, HTML5, SQL, NoSQL</li>
+          <li>● Languages: JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, JSX</li>
           <li>● Applications: GitHub, MongoDB, MySQL </li>
           <li>
             ● Tools: Express, React, Node, Handlebars, jQuery, Bootstrap,
